@@ -38,7 +38,7 @@ function calculateAge(actualD, actualM, actualY, y, m, d){
     
     if(d > actualD){
         monthR.textContent -= 1;
-        dayR.textContent = Math.abs(actualD - d);
+        dayR.textContent = 30 - Math.abs(actualD - d);
     }else{
         dayR.textContent = actualD - d;
     }
